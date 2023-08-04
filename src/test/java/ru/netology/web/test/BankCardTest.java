@@ -3,7 +3,6 @@ package ru.netology.web.test;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
 import ru.netology.web.page.LoginPage;
 import ru.netology.web.page.PersonalAccount;
 
@@ -25,7 +24,7 @@ public class BankCardTest {
 
     @Test
     @DisplayName("Should success transfer amount from 1 to 2")
-    void ShouldSuccessTransferAmountFrom1To2() {
+    void shouldSuccessTransferAmountFrom1To2() {
         //инфо по картам
         var cardInfo1 = getCardInfo1();
         var cardInfo2 = getCardInfo2();
@@ -50,7 +49,7 @@ public class BankCardTest {
 
     @Test
     @DisplayName("Should be error because Amount is invalid")
-    void ShouldBeErrorAmountIsInvalid1() {
+    void shouldBeErrorAmountIsInvalid() {
         var cardInfo1 = getCardInfo1();
         var cardInfo2 = getCardInfo2();
         var balanceCard1 = personalAccount.getCardBalance(cardInfo1);
